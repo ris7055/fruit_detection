@@ -1,10 +1,4 @@
 #!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
-#!/usr/bin/env python
 
 import rospy
 import torch
@@ -15,7 +9,7 @@ from cv_bridge import CvBridge
 from std_msgs.msg import String
 
 # Initialize the model
-model = torch.hub.load('ultralytics/yolov5', 'custom', path='path/to/best.pt')  # Update the path to your trained model
+model = torch.hub.load('ultralytics/yolov5', 'custom', path='last.pt')  # Update the path to your trained model
 
 # Initialize the speech synthesis engine
 engine = pyttsx3.init()
